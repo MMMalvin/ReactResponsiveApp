@@ -13,7 +13,7 @@ const NavBar = () => {
             {navbarHeaders.map((nav, index) => ( 
                 <li key={nav.id} className={`font-poppins font-normal cursor-pointer
                     text-[16px] text-white mr-10`}>
-                    <a href={nav.title}> {nav.title} </a> 
+                     {nav.title}
                 </li>
             ))}
         </ul>
@@ -24,7 +24,7 @@ const NavBar = () => {
                 onClick={() => setToggle((prev) => !prev)} 
             />
 
-            <div className={`${toggle ? 'flex' : 'hidden'} p-6 bg-black-gradient 
+            <div className={`${toggle ? 'flex' : 'hidden'} p-6 primary-color-scheme 
             absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-lg sidebar z-10`}> {/* this is used to render the drop down tab when the menu is clicked*/}
                 <ul className="list-none flex flex-col justify-end items-center flex-1">
                 {navbarHeaders.map((nav, index) => (

@@ -27,15 +27,15 @@ const App = () => (
 
     <div className={`bg-secondary ${styles.paddingX} ${styles.paddingY} `}>
       <div className={`${styles.boxWidth}`}>
-        <Services id='Services' />
-        <Case id='Cases'/> 
-        <Industries id='Industries'/> 
+        <Services/>
+        <Case/> 
+        <Industries/> 
       </div>
     </div>
 
     <div className={`bg-primary ${styles.paddingX}`}>
       <div className={``}>
-        <Contact id='Contact'/> {/* responsibe for rendering the Contact of the application*/}
+        <Contact/> {/* responsibe for rendering the Contact of the application*/}
       </div>
     </div>
 
